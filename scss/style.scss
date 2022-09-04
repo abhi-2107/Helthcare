@@ -1,20 +1,41 @@
+// variables are defined in sass like this
+$bg-color: #e5e5e5;
+$text-color: #1f1534;
+// this is how maping is done 
+$font-weights: (
+  "regular": 300,
+  "medium": 400,
+  "bold": 700,
+);
+
 body {
-    background-color: #E5E5E5;
+  background: $bg-color;
+  font-family: "Mulish", sans-serif;
+  // using content of mapping 
+  font-weight: map-get($font-weights, regular);
 }
 
 header {
-    ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-      }
-    
-      li { display: inline-block; }
-    
-      a {
-        display: block;
-        padding: 6px 12px;
-        text-decoration: none;
-      }
-    
+  display: flex;
+  justify-content: space-between;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+    color: $text-color;
+    opacity: 0.5;
+    font-size: 18px;
+    font-weight: map-get($font-weights, medium);
+  }
 }
