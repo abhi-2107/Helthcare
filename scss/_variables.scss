@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+// variables are defined in sass like this
+$bg-color: white;
+$text-color: #1f1534;
+// this is how maping is done
+$font-weights: (
+  "regular": 300,
+  "medium": 400,
+  "bold": 700,
+);
