@@ -1,5 +1,10 @@
+*{
+margin: 0;
+padding: 0;
+}
+
 // variables are defined in sass like this
-$bg-color: #E5E5E5;
+$bg-color: white;
 $text-color: #1f1534;
 // this is how maping is done
 $font-weights: (
@@ -9,23 +14,21 @@ $font-weights: (
 );
 
 body {
-  margin: 0;
-  padding: 0;
   background: $bg-color;
   font-family: "Mulish", sans-serif;
   // using content of mapping
   font-weight: map-get($font-weights, regular);
 }
 
-p{
+p {
   opacity: 0.5;
 }
 header {
   display: flex;
   justify-content: space-between;
-  padding:  3% 6%;
+  padding: 3% 6%;
 
-  .header-left {
+  #{&}header-left {
     a {
       font-weight: map-get($font-weights, bold);
       font-size: 24px;
@@ -33,11 +36,10 @@ header {
     }
   }
 
-  // not working right now 
-  .header-right {
+  // not working right now
+  #{&}header-right {
     opacity: 0.5;
-    
-
+    border: 2px solid red;
   }
 
   ul {
@@ -57,27 +59,43 @@ header {
     font-size: 18px;
     color: $text-color;
     font-weight: map-get($font-weights, medium);
+    &:hover{
+      font-weight: map-get($font-weights , bold );
+    }
   }
+
 }
 
-.main-box{display: flex;
+.main-box {
+  display: flex;
   justify-content: space-between;
-  padding:  3% 6%;
-  .main-box-content-left{
+  padding: 3% 6%;
+  .main-box-content-left {
     width: 40%;
     padding: 6px 12px;
-    h1{
-      font-size: map-get($font-weights, bold );
+    
+    h1 {
+      font-size: map-get($font-weights, bold);
       font-size: 48px;
-      line-height: 56px;  
+      line-height: 56px;
+    }
   }
 }
 
-.services{
- 
-
+.services {
+  width: 80%;
+  margin: 5px auto;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ row-gap: 0px;
+  border: 2px solid yellow;
+#{&}p{
+  margin: 0px;
 }
-.grid{display: grid;
-  grid-template-columns: auto auto auto;
+}
 
+.grid {border: 2px solid red;
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
