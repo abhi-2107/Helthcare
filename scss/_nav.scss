@@ -5,6 +5,24 @@ header {
 
 //   & goes for parent text 
   & .header-left {
+    display: flex;
+
+    & .logo{
+      width: 41px;
+      height: 41px;
+      border-radius: 50%;
+      background-color: map-get($button-bg-color, blue-bg );
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      span{
+        font-size: 26px;
+        font-weight: map-get($font-weights, bold );
+        color: $bg-color;
+      }
+    }
+
     a {
       font-weight: map-get($font-weights, bold);
       font-size: 24px;
@@ -14,11 +32,16 @@ header {
 
   
   & .header-right {
-    opacity: 0.5;
     
+    & a{
+      opacity: 0.5;
+      font-size: 18px;
+      color: $text-color;
+    }
+
     & .header-R1{
-        opacity: 10;
-        color: black;
+        opacity: 1;
+         color: #1F1534;
         font-weight: map-get($font-weights, bold );
     }
   }
@@ -37,12 +60,11 @@ header {
     display: block;
     padding: 6px 12px;
     text-decoration: none;
-    font-size: 18px;
-    color: $text-color;
-    font-weight: map-get($font-weights, medium);
-   
+    font-weight: map-get($font-weights, medium);   
+  
     &:hover {
       font-weight: map-get($font-weights, bold);
+      transition: 0.3s ease-in-out ;
     }
   }
 }

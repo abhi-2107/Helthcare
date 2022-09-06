@@ -1,19 +1,19 @@
 .grid {
   display: grid;
   grid-template-columns: auto auto auto;
-  padding: 5% 7%;
+  padding: 0px 7% 5%;
   gap: 20px;
   background-color: whitesmoke;
 
   & .grid-item {
     border-radius: 20px;
     padding: 40px 25px;
-    background-color: white;
+    background-color: $bg-color;
     
     & .grid-image{
       width: 60px;
-      height: auto;
-      // margin-bottom: 20px;
+      height: 70px;
+      margin-bottom: 30px;
     }
     
     & h3 {
