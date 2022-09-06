@@ -1,5 +1,5 @@
 // this is how a partial file is imported , it get easy to maintain partwise
-@import 'variables';
+@import "variables";
 
 body {
   background: $bg-color;
@@ -9,25 +9,36 @@ body {
 }
 
 // importing nav bar styles
-@import 'nav';
+@import "nav";
 
-p {
-  opacity: 0.5;
-}
-
-
-.main-box {
+// made a general declaration for flex box so that dont need to use same property again2.
+@mixin flexbox-space-bw {  
   display: flex;
   justify-content: space-between;
   padding: 3% 6%;
+}
+
+p {
+  opacity: 0.5;
+  line-height: 28px;
+}
+
+.main-box {
+  // including properties declared for flexbox
+  @include flexbox-space-bw;
+
   .main-box-content-left {
     width: 40%;
     padding: 6px 12px;
-    
-    h1 {
+
+  h1 {
       font-size: map-get($font-weights, bold);
       font-size: 48px;
       line-height: 56px;
+    }
+
+    p{
+      margin: 20px 0px;
     }
   }
 }
@@ -35,17 +46,13 @@ p {
 .services {
   width: 80%;
   margin: 5px auto;
- display: flex;
- flex-direction: column;
- align-items: center;
- row-gap: 0px;
-  border: 2px solid yellow;
-#{&}p{
-  margin: 0px;
-}
+  text-align: center;
+ 
+  // this is how i can further link css #{&}
+  // #{&}p {
+  //   margin: 0px;
+  // }
 }
 
-.grid {border: 2px solid red;
-  display: grid;
-  grid-template-columns: auto auto auto;
-}
+// importing grid layout boxes
+@import "grid-boxes";
