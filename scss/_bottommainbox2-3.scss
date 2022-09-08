@@ -1,0 +1,49 @@
+.main-box2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3% 6%;
+  margin: 100px 0px;
+}
+.main-box2-content-left {
+  width: 50%;
+
+  & img {
+    width: 100%;
+    height: auto;
+  }
+}
+.main-box2-content-right {
+  width: 35%;
+  margin-right: 40px;
+  & p {
+    margin: 20px 0px;
+  }
+  & h2 {
+    // font-size: 30px;
+    line-height: 42px;
+  }
+}
+.image-box2-left {
+  width: 120%;
+  height: auto;
+}
+
+.main-box3-content-left {
+  margin-left: 110px;
+  width: 30%;
+  & p {
+    margin: 20px 0px;
+  }
+}
+
+.main-box3-content-right {
+  width: 50%;
+  align-items: flex-start;
+  overflow: hidden;
+
+  & img {
+    width: 100%;
+    height: auto;
+  }
+}

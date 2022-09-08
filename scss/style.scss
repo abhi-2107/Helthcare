@@ -14,17 +14,10 @@ body {
   font-weight: map-get($font-weights, regular);
 }
 
-// made a general declaration for flex box so that dont need to use same property again2.
-@mixin flexbox-space-bw {
-  display: flex;
-  justify-content: space-between;
-  padding: 3% 6%;
-}
-
 // making a common dummy for all the buttons inside the web
 @mixin button {
-  padding: 12px 25px;
-  border-radius: 20px;
+  padding: 12px 35px;
+  border-radius: 55px;
   border: 1px solid #458ff6;
   font-weight: map-get($font-weights, medium);
   font-size: 14px;
@@ -41,28 +34,32 @@ button {
   background-color: map-get($button-bg-color, blue-bg);
 }
 
-.button-at-center{position: relative;
-
-
- & .button-center{
-  top: 50%;
-  right: 50%;
-  position: absolute;
-background-color: $bg-color;
-color: map-get($button-bg-color, blue-bg);
-margin: auto;
+.button-at-center {
+  display: flex;
+  justify-content: center;
 }
+.button-second {
+  background-color: $bg-color;
+  color: map-get($button-bg-color, blue-bg);
+  margin: auto;
 }
 p {
   opacity: 0.5;
   line-height: 28px;
 }
 
+// made a general declaration for flex box so that dont need to use same property again2.
+@mixin flexbox-space-bw {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3% 6%;
+}
+
 .main-box {
   // including properties declared for flexbox
   @include flexbox-space-bw;
-  margin-top: 5%;
-  position: relative;
+  // position: relative;
 
   .main-box-content-left {
     width: 40%;
@@ -80,12 +77,12 @@ p {
   }
 
   .main-box-image-right {
-    position: absolute;
-    right: 10%;
-    top: -45px;
-
+    width: 50%;
+    // position: absolute;
+    // right: -50px;
+    // top: -45px;
     & .main-image {
-      width: 510px;
+      width: 100%;
       height: auto;
     }
   }
@@ -93,7 +90,7 @@ p {
 
 .services {
   width: 80%;
-  margin: 150px auto 50px;
+  margin: 90px auto 50px;
   text-align: center;
 
   // this is how i can further link css #{&}
@@ -101,3 +98,10 @@ p {
   //   margin: 0px;
   // }
 }
+
+// including styles for two boxes of bottom
+@import "bottommainbox2-3";
+
+
+// including footer style
+@import 'footer'

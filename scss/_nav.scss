@@ -3,22 +3,22 @@ header {
   justify-content: space-between;
   padding: 3% 6%;
 
-//   & goes for parent text 
+  //   & goes for parent text
   & .header-left {
     display: flex;
 
-    & .logo{
+    & .logo {
       width: 41px;
       height: 41px;
       border-radius: 50%;
-      background-color: map-get($button-bg-color, blue-bg );
+      background-color: map-get($button-bg-color, blue-bg);
       display: flex;
       justify-content: center;
       align-items: center;
 
-      span{
+      span {
         font-size: 26px;
-        font-weight: map-get($font-weights, bold );
+        font-weight: map-get($font-weights, bold);
         color: $bg-color;
       }
     }
@@ -30,19 +30,17 @@ header {
     }
   }
 
-  
   & .header-right {
-    
-    & a{
+    & a {
       opacity: 0.5;
       font-size: 18px;
       color: $text-color;
     }
 
-    & .header-R1{
-        opacity: 1;
-         color: #1F1534;
-        font-weight: map-get($font-weights, bold );
+    & .header-R1 {
+      opacity: 1;
+      color: #1f1534;
+      font-weight: map-get($font-weights, bold);
     }
   }
 
@@ -60,11 +58,11 @@ header {
     display: block;
     padding: 6px 12px;
     text-decoration: none;
-    font-weight: map-get($font-weights, medium);   
-  
+    font-weight: map-get($font-weights, medium);
+
     &:hover {
       font-weight: map-get($font-weights, bold);
-      transition: 0.3s ease-in-out ;
+      transition: 0.3s ease-in-out;
     }
   }
 }
