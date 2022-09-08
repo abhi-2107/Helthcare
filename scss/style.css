@@ -218,15 +218,56 @@ p {
   height: auto;
 }
 
+.footer_logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 130px;
+}
+
+.circle {
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle span {
+  color: #5B9BF3;
+  font-size: 26px;
+  font-weight: 700;
+}
+
 footer {
   margin-top: 150px;
   padding: 7%;
   display: grid;
-  grid-template-columns: 40% 10% 10% 10%;
+  grid-template-columns: 40% auto auto auto;
   gap: 80px;
   background: linear-gradient(183.41deg, #7bccf8 -8.57%, #0a56c8 82.96%);
   color: white;
 }
 footer p {
+  opacity: 0.9;
+}
+footer a {
+  text-decoration: none;
+  display: block;
+  color: white;
+  line-height: 28px;
   font-weight: 300;
+}
+footer a:hover {
+  font-weight: 500;
+  color: darkblue;
+}
+
+.copyright {
+  text-decoration: underline;
+}
+.copyright:hover {
+  font-weight: 500;
+  color: darkblue;
 }/*# sourceMappingURL=style.css.map */
