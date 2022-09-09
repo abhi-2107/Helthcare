@@ -71,6 +71,7 @@ header a:hover {
   padding: 40px 25px;
   background-color: white;
   box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+  position: relative;
 }
 .grid .grid-item .grid-image {
   width: 60px;
@@ -189,6 +190,57 @@ p {
   height: auto;
 }
 
+.slideshow {
+  color: white;
+  margin: 0px 10%;
+  padding: 4% 6%;
+  background: linear-gradient(183.41deg, #7bccf8 -8.57%, #0a56c8 82.96%);
+  position: relative;
+  border-radius: 24px;
+}
+.slideshow p {
+  opacity: 0.9;
+}
+
+.dots_style_topright {
+  position: absolute;
+  top: -15px;
+  right: -50px;
+}
+
+.dots_at_bottom_right {
+  position: absolute;
+  bottom: 30px;
+  left: -60px;
+  z-index: -1;
+}
+
+.slide_first h2 {
+  text-align: center;
+  font-weight: 400;
+}
+
+.slide_flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.slide_flex_left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+.slide_flex_left img {
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.slide_flex_right {
+  width: 50%;
+}
+
 .services {
   width: 80%;
   margin: 90px auto 50px;
@@ -286,7 +338,6 @@ footer p {
 }
 footer a {
   text-decoration: none;
-  display: block;
   color: white;
   line-height: 28px;
   font-weight: 300;
