@@ -35,6 +35,7 @@
   & p {
     margin: 20px 0px;
   }
+
 }
 
 .main-box3-content-right {
@@ -45,5 +46,12 @@
   & img {
     width: 100%;
     height: auto;
+  }
+}
+
+.button-second{
+  img{
+    margin-left: 5px;
+    transform: rotate(90deg);
   }
 }

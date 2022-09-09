@@ -64,6 +64,14 @@ p {
   .main-box-content-left {
     width: 40%;
     padding: 6px 12px;
+    position: relative;
+
+    & img{
+position: absolute;
+background-color: #458ff6;
+left:-120px;
+top: -100px;
+    }
 
     h1 {
       font-size: map-get($font-weights, bold);

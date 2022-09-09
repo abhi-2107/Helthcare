@@ -23,7 +23,7 @@
 
 footer{
     margin-top: 150px;
-    padding: 7%;
+    padding: 6% 3%;
     display: grid;
     grid-template-columns: 40% auto auto auto;
     gap:  80px;
@@ -47,7 +47,7 @@ footer{
 }
 .copyright{
     text-decoration: underline;
- 
+    display: inline;
     &:hover{
         font-weight: 500;
         color: darkblue;

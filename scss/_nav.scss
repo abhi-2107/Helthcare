@@ -3,6 +3,7 @@ header {
   justify-content: space-between;
   padding: 3% 6%;
 
+
   //   & goes for parent text
   & .header-left {
     display: flex;
@@ -62,7 +63,7 @@ header {
 
     &:hover {
       font-weight: map-get($font-weights, bold);
-      transition: 0.3s ease-in-out;
+      transition: 0.1s ease-in-out;
     }
   }
 }
