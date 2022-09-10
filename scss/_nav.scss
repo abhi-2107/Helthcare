@@ -32,6 +32,9 @@ header {
   }
 
   & .header-right {
+     img{
+      display: none;
+     }
     & a {
       opacity: 0.5;
       font-size: 18px;
@@ -44,6 +47,7 @@ header {
       font-weight: map-get($font-weights, bold);
     }
   }
+
 
   ul {
     list-style: none;

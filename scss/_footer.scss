@@ -24,7 +24,7 @@
 }
 
 footer{
-    overflow: hidden;
+    // overflow: hidden;
     position: relative;
     margin-top: 150px;
     padding: 6% 11%;
@@ -36,9 +36,11 @@ footer{
 
 img{
     position: absolute;
-    bottom: -15px;
+    bottom: 2px;
     left:-20px;
+
 }
+
 
  p{
     opacity: 0.9;
@@ -63,4 +65,12 @@ img{
         font-weight: 500;
         color: darkblue;
     }
+}
+
+.foot-dot-right{
+    position: absolute; 
+ right: 170px;
+ top: 5px;
+ z-index: -1;
+
 }
