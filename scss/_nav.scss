@@ -1,7 +1,7 @@
 header {
   display: flex;
   justify-content: space-between;
-  padding: 3% 6%;
+  padding: 40px 40px 10px 130px;
 
 
   //   & goes for parent text
@@ -46,8 +46,6 @@ header {
   }
 
   ul {
-    margin: 0;
-    padding: 0;
     list-style: none;
   }
 
@@ -57,7 +55,7 @@ header {
 
   a {
     display: block;
-    padding: 6px 12px;
+    padding: 6px 10px;
     text-decoration: none;
     font-weight: map-get($font-weights, medium);
 

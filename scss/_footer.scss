@@ -1,3 +1,5 @@
+
+
 .footer_logo{
     display: flex;
     justify-content: space-between;
@@ -22,14 +24,23 @@
 }
 
 footer{
+    overflow: hidden;
+    position: relative;
     margin-top: 150px;
-    padding: 6% 3%;
+    padding: 6% 11%;
     display: grid;
     grid-template-columns: 40% auto auto auto;
     gap:  80px;
     background: linear-gradient(183.41deg, #7bccf8 -8.57%, #0a56c8 82.96%);
     color: $bg-color;
-& p{
+
+img{
+    position: absolute;
+    bottom: -15px;
+    left:-20px;
+}
+
+ p{
     opacity: 0.9;
 }
 

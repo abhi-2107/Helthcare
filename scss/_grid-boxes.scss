@@ -3,6 +3,7 @@
   grid-template-columns: auto auto auto;
   padding: 0px 7% 5%;
   gap: 20px;
+  position: relative;
 
   & .grid-item {
     border-radius: 20px;
@@ -14,7 +15,7 @@
     & .grid-image {
       width: 60px;
       height: 70px;
-      margin-bottom: 30px;
+      margin-bottom: 10px;
     }
 
     & h3 {
@@ -23,12 +24,20 @@
   }
 }
 
-// not working 
-// .middle-right-dots{
-//   position: absolute;
-// right: 100;
-// top: 0;
-// }
+.middle-right-dots{
+   position: absolute;
+right: 24px;
+top: 37%;
+}
+
+.left-bg{
+  position: absolute;
+  left: 0px;
+  top: -35px;
+  width: 50%;
+  height: 80%;
+}
+
 
 .grid-content {
   margin-top: 20px;
