@@ -4,7 +4,14 @@
   align-items: center;
   padding: 3% 6%;
   margin: 100px 0px;
+  position: relative;
 }
+.main2-dots {
+  position: absolute;
+  right: 10px;
+  top: -120px;
+}
+
 .main-box2-content-left {
   width: 50%;
 
@@ -35,7 +42,6 @@
   & p {
     margin: 20px 0px;
   }
-
 }
 
 .main-box3-content-right {
@@ -49,8 +55,8 @@
   }
 }
 
-.button-second{
-  img{
+.button-second {
+  img {
     margin-left: 5px;
     transform: rotate(90deg);
   }

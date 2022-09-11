@@ -285,6 +285,13 @@ p {
   align-items: center;
   padding: 3% 6%;
   margin: 100px 0px;
+  position: relative;
+}
+
+.main2-dots {
+  position: absolute;
+  right: 10px;
+  top: -120px;
 }
 
 .main-box2-content-left {
