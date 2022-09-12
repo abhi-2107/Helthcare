@@ -1,0 +1,26 @@
+@media screen and (max-width: 930px) {
+  body {
+    background-color: antiquewhite;
+  }
+  header {
+    padding-left: 50px;
+    padding-top: 25px;
+    a {
+      padding: 5px;
+    }
+  }
+  .main-box {
+    padding: 10% 2% 3%;
+
+
+    .main-box-content-left img{
+      left: -55px;
+      width: 18%;
+      top: -85px;
+    }
+  }
+
+  footer {
+    grid-template-columns: auto;
+  }
+}
