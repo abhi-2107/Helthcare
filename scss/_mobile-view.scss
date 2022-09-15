@@ -3,16 +3,17 @@
 header{
   justify-content: space-between;
   align-items: center;
-  padding: 6% 4% 6% 9%;
+  padding: 6%;
   & .header-right {
     justify-content: flex-end;
 
     & .header-menu{
       display: block;
       display: flex;
+      justify-content: flex-end;
       align-items: center;
       img{
-        width: 50%;
+        width: 35%;
       }
     }
 

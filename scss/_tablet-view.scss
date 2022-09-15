@@ -1,10 +1,11 @@
 @media screen and (min-width:450px) and (max-width: 930px) {
   
   header {
-    padding-left: 50px;
+    padding-left: 30px;
+    padding-right: 15px;
     padding-top: 25px;
     a {
-      padding: 5px;
+      padding: 3px;
     }
   }
   .main-box {
@@ -77,6 +78,7 @@ margin-left: 50px;
     grid-template-columns: auto auto auto auto;
     justify-content: center;
     padding: 6% 11%;
+    gap: 60px;
 img{
   width: 12%;
 }
