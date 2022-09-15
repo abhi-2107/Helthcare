@@ -4,7 +4,6 @@ header {
   align-items: baseline;
   padding: 40px 40px 10px 130px;
 
-
   //   & goes for parent text
   & .header-left {
     display: flex;
@@ -33,9 +32,14 @@ header {
   }
 
   & .header-right {
-     img{
+    display: flex;
+    align-items: center;
+    
+     .header-menu{
       display: none;
-     }
+    }
+
+
     & a {
       opacity: 0.5;
       font-size: 18px;
@@ -49,11 +53,12 @@ header {
     }
   }
 
-
+    
+    
+  
   ul {
     list-style: none;
   }
-
   li {
     display: inline-block;
   }

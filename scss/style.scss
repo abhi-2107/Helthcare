@@ -47,7 +47,7 @@ p {
   opacity: 0.5;
   line-height: 28px;
 }
-
+  
 // made a general declaration for flex box so that dont need to use same property again2.
 @mixin flexbox-space-bw {
   display: flex;
@@ -69,6 +69,7 @@ p {
     & img{
 position: absolute;
 background-color: #458ff6;
+max-width: 100%;
 left:-120px;
 top: -100px;
     }
@@ -89,7 +90,7 @@ top: -100px;
     // right: -50px;
     // top: -45px;
     & .main-image {
-      width: 100%;
+      max-width: 100%;
       height: auto;
     }
   }

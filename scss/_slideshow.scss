@@ -11,8 +11,10 @@
   }
 }
 
-.dots_style_topright    {
+.dots_style_topright {
     position: absolute;
+    max-width: 100%;
+    height: auto;
     top: -15px;
     right: -50px;
   }

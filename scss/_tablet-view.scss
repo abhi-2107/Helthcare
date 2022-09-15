@@ -1,7 +1,5 @@
-@media screen and (max-width: 930px) {
-  body {
-    background-color: antiquewhite;
-  }
+@media screen and (min-width:450px) and (max-width: 930px) {
+  
   header {
     padding-left: 50px;
     padding-top: 25px;
@@ -76,6 +74,15 @@ margin-left: 50px;
 // }
 
   footer {
-    grid-template-columns: auto;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    padding: 6% 11%;
+img{
+  width: 12%;
+}
+
+    .foot-item1{
+      grid-column: 1/span 4;
+    }
   }
 }
