@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./favicon_io/favicon.ico" type="image/x-icon">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./scss/style.css">
-    <title>Helthcare</title>
+    <title>Healthcare</title>
 </head>
 
 <body>
@@ -21,15 +24,16 @@
             </ul>
         </div>
         <div class="header-right">
-            <ul>
+            <ul id="menu-click" >
                 <li><a href="#" class="header-R1">Home</a></li>
                 <li><a href="#">Find a doctor</a></li>
                 <li><a href="#">Apps</a></li>
                 <li><a href="#">Testimonials</a></li>
                 <li><a href="#">About us</a></li>
             </ul>
-            <div class="header-menu">
-                <img src="./img/menu.png" alt="mobile version menu">
+            <div class="header-menu" onclick="toggleClick()">
+                <!-- <img src="./img/menu.png" alt="mobile version menu"> -->
+                <div class="menu-button"></div>
             </div>
         </div>
     </header>
@@ -37,9 +41,10 @@
         <div class="main-box">
             <div class="main-box-content-left">
                 <img src="./img/dots.jpg" alt="styles dots left side">
-                <h1>Virtual helthcare for you </h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur doloribus et, deserunt
-                    molestias a timepass jindagi inventore.</p>
+                <h1>Virtual healthcare for you </h1>
+                <p>Trafalgar provides progressive, and affordable 
+                    healthcare, accessible on mobile and online 
+                    for everyone</p>
                 <button>Consult today</button>
             </div>
             <div class="main-box-image-right">
@@ -49,9 +54,7 @@
         <div class="services">
             <h2>Our services <br> ____</h2>
             <br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aut facilis consectetur beatae non
-                solutaminus veniam perspiciatis, odio earum necessitatibus atque? Necessitatibus repellendus et nobis
-                est quae eveniet distinctio.</p>
+            <p>We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health</p>
         </div>
 
         <div class="grid">
@@ -61,46 +64,43 @@
                 <img src="./img/grid1.png" alt="g1" class="grid-image">
                 <div class="grid-content">
                     <h3>Search doctor</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur Qui ea commodi labore nostrum minima veritatis quos.</p>
+                    <p>Choose your doctor from thousands of specialist, general, and trusted hospitals</p>
                 </div>
             </div>
             <div class="grid-item">
                 <img src="./img/grid2.png" alt="g2" class="grid-image">
                 <div class="grid-content">
                     <h3>Online pharmacy</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ea commodi veritatis quos.</p>
+                    <p>Buy  your medicines with our mobile application with a simple delivery system</p>
                 </div>
             </div>
             <div class="grid-item">
                 <img src="./img/grid3.jpg" alt="g3" class="grid-image">
                 <div class="grid-content">
                     <h3>Consultation</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ea commodi labore nostrum minima
-                        veritatis
-                        quos.</p>
+                    <p>Free consultation with our trusted doctors and get the best recomendations</p>
                 </div>
             </div>
             <div class="grid-item">
                 <img src="./img/grid4.jpg" alt="g4" class="grid-image">
                 <div class="grid-content">
                     <h3>Details info</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur commodi labore nostrum minima veritatis quos.</p>
+                    <p>Free consultation with our trusted doctors and get the best recomendations</p>
                 </div>
             </div>
             <div class="grid-item">
                 <img src="./img/grid5.jpg" alt="g5" class="grid-image">
                 <div class="grid-content">
                     <h3>Emargency care</h3>
-                    <p>Lorem ipsum dolor sit Qui ea commodi labore nostrum minima veritatis quos.</p>
+                    <p>You can get 24/7 urgent care for yourself or your children and your
+                        lovely family</p>
                 </div>
             </div>
             <div class="grid-item">
                 <img src="./img/grid6.jpg" alt="g6" class="grid-image">
                 <div class="grid-content">
                     <h3>Tracking</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ea commodi labore nostrum minima
-                        veritatis
-                        quos.</p>
+                    <p>Track and save your medical history and health data </p>
                 </div>
             </div>
         </div>
@@ -112,9 +112,9 @@
                 <img src="./img/image-box2-left.png" alt="box2 image ">
             </div>
             <div class="main-box2-content-right">
-                <h2>Leading helthcare <br> providers <br>____</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique atque veritatis esse provident,
-                    iste hic cum, et porro quae consectetur facere iure at quisquam expedita.</p>
+                <h2>Leading healthcare <br> providers <br>____</h2>
+                <p>Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone. To us, it’s not just work. We take pride 
+                    in the solutions we deliver</p>
                 <button class="button-second">Learn more</button>
             </div>
         </div>
@@ -124,9 +124,9 @@
             </div>
             <div class="main-box3-content-left">
                 <h2>Download our <br> mobile apps <br>____</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem magnam iste accusamus aliquam
-                    unde delectus veniam id suscipit ea voluptatibus culpa, consectetur qui quo accusantium ipsa
-                    inventore cum maxime totam.</p>
+                <p>Our dedicated patient engagement app and 
+                    web portal allow you to access information instantaneously (no tedeous form, long calls, 
+                    or administrative hassle) and securely</p>
                 <button class="button-second">Download <img src="./img/Vector.png" alt=""></button>
             </div>
             <div class="main-box3-content-right">
@@ -143,14 +143,14 @@
                     <div class="slide_flex_left">
                         <img src="./img/man.png" alt="customer image">
                         <div class="left-content">
-                            <h3>Edward Newgate</h3>
+                            <h3>Anirudha Dubey</h3>
                             <p>Founder Circle</p>
                         </div>
                     </div>
                     <div class="slide_flex_right">
-                        <p>" Lorem ipsum dolor sit amet consectetur adipisicing elit. Est repudiandae maiores dicta,
-                            voluptas, hic culpa eos ipsa, dolorum distinctio necessitatibus tenetur Perferendis fugiat
-                            in nihil matlab ki ho gya bhaiya "</p>
+                        <p>“Our dedicated patient engagement app and 
+                            web portal allow you to access information instantaneously (no tedeous form, long calls, 
+                            or administrative hassle) and securely”</p>
                     </div>
                 </div>
             </div>
@@ -166,7 +166,8 @@
                 <img src="./img/disease-detection.png" alt="disease">
                 <div class="grid_2_content">
                     <h3>Disease detection, check up in the laboratory</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, magnam.</p>
+                    <p>In this case, the role of the health laboratory is very important to do
+                        a disease detection...</p>
                     <a href="#">Read more -></a>
                 </div>
             </div>
@@ -174,7 +175,7 @@
                 <img src="./img/herbal.png" alt="herbal">
                 <div class="grid_2_content">
                     <h3>Herbal medicines that are safe for consuption</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis, illo neque.</p>
+                    <p>Herbal medicine is very widely used at this time because of its very good for your health...</p>
                     <a href="#">Read more -></a>
                 </div>
             </div>
@@ -182,7 +183,8 @@
                 <img src="./img/natural-care.png" alt="natural care">
                 <div class="grid_2_content">
                     <h3>Natural care for healthy facial skin</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, magnam.</p>
+                    <p>A healthy lifestyle should start from now and also for your skin health.
+                        There are some...</p>
                     <a href="#">Read more -></a>
                 </div>
             </div>
@@ -197,10 +199,10 @@
                     <h3>Trafalgar</h3>
                 </div>
                 <br>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit voluptatem obcaecati
-                    recusandae, similique hic optio odit esse incidunt harum porro
+                <p>Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online 
+                    for everyone
                     <br><br>
-                    <a href="#" class="copyright"> &copy Trafalgar EIGHT SEPT 2022.</a>All rights reserved.
+                    <a href="#" class="copyright"> &copy Trafalgar PVT LTD 2022.</a>All rights reserved.
                 </p>
             </div>
             <div class="company foot-item2">
@@ -233,6 +235,7 @@
             </div>
         </footer>
     </main>
+    <script src="./index.js"></script>
 </body>
 
 </html>

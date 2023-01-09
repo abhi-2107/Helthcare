@@ -2,7 +2,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding: 40px 40px 10px 130px;
+  padding: 30px 40px 10px 95px;
 
   //   & goes for parent text
   & .header-left {
@@ -33,6 +33,7 @@ header {
 
   & .header-right {
     display: flex;
+    // display: block;
     align-items: center;
     
      .header-menu{
@@ -61,6 +62,7 @@ header {
   }
   li {
     display: inline-block;
+    // display: block;
   }
 
   a {
