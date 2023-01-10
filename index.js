@@ -5,5 +5,8 @@ function toggleClick() {
         click.style.display = "none";
     } else {
         click.style.display = "block";
+        
+
+
     }
 }

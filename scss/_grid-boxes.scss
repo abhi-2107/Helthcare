@@ -10,7 +10,12 @@
     padding: 40px 25px;
     background-color: $bg-color;
     box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+    transition: 400ms ease-in-out;
     position: relative;
+
+    &:hover{
+      transform: scale(1.03);
+    }
 
     & .grid-image {
       width: 60px;
