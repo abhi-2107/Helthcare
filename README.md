@@ -12,4 +12,4 @@
 
 ### Learnings :-
 - Use of CSS preprocessor SASS for better CSS code management and extra features of SASS.
--In depth use of Flex-box.
+- In depth use of Flex-box.
